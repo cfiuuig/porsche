@@ -40,7 +40,7 @@ body {
     gap: 80px;
 }
 
-.header__nav-link {
+.header__nav-list_item-link {
     color: #F0F0F0;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -66,7 +66,7 @@ body {
 .banner__title {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 140px;
+    font-size: clamp(3.125rem, 0.93rem + 10.98vw, 8.75rem);
     color: #B31D1E;
 }
 
@@ -115,7 +115,7 @@ body {
 .car__left-title {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: clamp(1.563rem, 1.197rem + 1.83vw, 2.5rem);
     color: #EB3A13;
 }
 
@@ -123,15 +123,15 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 20px;
-
+    word-break: break-all
 }
 
-.car__rigt {
+.car__right {
     max-width: 540px;
     width: 100%;
 }
 
-.car__rigt img {
+.car__right img {
     width: 100%;
 }
 
@@ -160,7 +160,7 @@ body {
     width: 100%;
 }
 
-.gallerey__BigImg {
+.gallerey__img img {
     width: 100%;
 }
 
@@ -190,6 +190,11 @@ body {
     font-weight: 500;
     font-size: 20px;
     color: #F0F0F0;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .about__img img {
@@ -249,7 +254,7 @@ body {
     background: linear-gradient(93.34deg, #E41818 0%, #FFA600 100%);
 }
 
-.footer__nav-right {
+.footer__nav-lists {
     display: flex;
     gap: 52px;
     align-items: flex-start;

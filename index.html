@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>PORSCHE</title>
 </head>
 
@@ -18,13 +19,13 @@
                 </a>
                 <ul class="header__nav-list">
                     <li class="header__nav-list_item">
-                        <a href="#" class="header__nav-link">HOME PAGE</a>
+                        <a href="#" class="header__nav-list_item-link">HOME PAGE</a>
                     </li>
                     <li class="header__nav-list_item">
-                        <a href="#" class="header__nav-link">CATEGORY</a>
+                        <a href="#" class="header__nav-list_item-link">CATEGORY</a>
                     </li>
                     <li class="header__nav-list_item">
-                        <a href="#" class="header__nav-link">ABOUT US</a>
+                        <a href="#" class="header__nav-list_item-link">ABOUT US</a>
                     </li>
                 </ul>
             </nav>
@@ -66,7 +67,7 @@
             <div class="gallerey__wrap">
                 <div class="gallerey__img"><img src="img/gallery1.png" alt=""></div>
                 <div class="gallerey__img"><img src="img/gallerey2.png" alt=""></div>
-                <div class="gallerey__BigImg"><img src="img/gallerey3.png" alt=""></div>
+                <div class="gallerey__img"><img src="img/gallerey3.png" alt=""></div>
             </div>
         </div>
     </section>
@@ -99,73 +100,55 @@
     <!-- about-end  -->
 
     <!-- footer-start -->
-<footer class="footer">
-  <div class="container">
-    <nav class="footer__nav">
-      <form id="contact-form" class="footer__nav-form" action="https://formspree.io/f/mojvgpev" method="POST">
-        <input class="footer__nav-form_input" type="text" name="first_name" placeholder="First Name" required>
-        <input class="footer__nav-form_input" type="text" name="last_name" placeholder="Last Name" required>
-        <input class="footer__nav-form_input" type="email" name="email" placeholder="Email address" required>
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__nav">
+                <form id="contact-form" class="footer__nav-form" action="https://formspree.io/f/mojvgpev" method="POST">
+                    <input class="footer__nav-form_input" type="text" name="first_name" placeholder="First Name"
+                        required>
+                    <input class="footer__nav-form_input" type="text" name="last_name" placeholder="Last Name" required>
+                    <input class="footer__nav-form_input" type="email" name="email" placeholder="Email address"
+                        required>
 
-        <!-- Тема письма -->
-        <input type="hidden" name="_subject" value="Сообщение с моего сайта">
+                    <!-- Тема письма -->
+                    <input type="hidden" name="_subject" value="Сообщение с моего сайта">
 
-        <!-- Используем HTML шаблон -->
-        <input type="hidden" name="_template" value="table">
+                    <!-- Используем HTML шаблон -->
+                    <input type="hidden" name="_template" value="table">
 
-        <!-- Сообщение -->
-        <textarea name="message" style="display:none;">
-<div>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Porsche_Logo.svg" alt="Porsche Logo">
-  <h2>Приветствую вас!</h2>
-  <p><strong>Кабилов Саркор Сардарович</strong></p>
-  <p>Создатель этого сайта</p>
-  <p>Благодарю вас, что посетили мой сайт!</p>
-</div>
+                    <!-- Сообщение -->
+                    <textarea name="message" style="display:none;">
+
         </textarea>
 
-        <button class="footer__nav-form_btn" type="submit">SUBMIT</button>
-      </form>
+                    <button class="footer__nav-form_btn" type="submit">SUBMIT</button>
+                </form>
 
-      <div class="footer__nav-right">
-        <ul class="footer__nav-list">
-          <h3 class="footer__nav-list_title">CONTACT</h3>
-          <li class="footer__nav-list_item"><a href="tel:+998988889898" class="footer__nav-list_item-link">+998 98 888 98 98</a></li>
-          <li class="footer__nav-list_item"><a href="mailto:porshe@gmail.com" class="footer__nav-list_item-link">porshe@gmail.com</a></li>
-          <li class="footer__nav-list_item"><a href="sms:32323232" class="footer__nav-list_item-link">zipcode 32323232</a></li>
-        </ul>
+                <div class="footer__nav-lists">
+                    <ul class="footer__nav-list">
+                        <h3 class="footer__nav-list_title">CONTACT</h3>
+                        <li class="footer__nav-list_item"><a href="tel:+998988889898"
+                                class="footer__nav-list_item-link">+998 98 888 98 98</a></li>
+                        <li class="footer__nav-list_item"><a href="mailto:porshe@gmail.com"
+                                class="footer__nav-list_item-link">porshe@gmail.com</a></li>
+                        <li class="footer__nav-list_item"><a href="sms:32323232"
+                                class="footer__nav-list_item-link">zipcode 32323232</a></li>
+                    </ul>
 
-        <ul class="footer__nav-list">
-          <h3 class="footer__nav-list_title">SOCIAL</h3>
-          <li class="footer__nav-list_item"><a href="#" class="footer__nav-list_item-link">Instagram</a></li>
-          <li class="footer__nav-list_item"><a href="#" class="footer__nav-list_item-link">Facebook</a></li>
-          <li class="footer__nav-list_item"><a href="#" class="footer__nav-list_item-link">Telegram</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</footer>
+                    <ul class="footer__nav-list">
+                        <h3 class="footer__nav-list_title">SOCIAL</h3>
+                        <li class="footer__nav-list_item"><a href="#" class="footer__nav-list_item-link">Instagram</a>
+                        </li>
+                        <li class="footer__nav-list_item"><a href="#" class="footer__nav-list_item-link">Facebook</a>
+                        </li>
+                        <li class="footer__nav-list_item"><a href="#" class="footer__nav-list_item-link">Telegram</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
 
-<script>
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-  event.preventDefault(); 
-  var form = this;
-
-  fetch(form.action, {
-    method: form.method,
-    body: new FormData(form),
-    headers: { 'Accept': 'application/json' }
-  }).then(response => {
-    if (response.ok) {
-      window.location.href = "thank-you.html"; 
-    } else {
-      alert("Ошибка при отправке формы. Попробуйте ещё раз.");
-    }
-  }).catch(error => {
-    alert("Ошибка при отправке формы. Попробуйте ещё раз.");
-  });
-});
-</script>
 
     <!-- footer-end -->
 </body>

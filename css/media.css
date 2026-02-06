@@ -1,0 +1,93 @@
+ @media screen and (max-width:1140px) {
+     .car__wrap {
+         flex-direction: column;
+     }
+
+     .car__left {
+         max-width: none;
+     }
+
+     .car__right {
+         max-width: none;
+     }
+ }
+
+ @media screen and (max-width:768px) {
+     .header__nav-list {
+         gap: 30px;
+     }
+
+     .gallerey__wrap {
+         flex-wrap: nowrap;
+         flex-direction: column;
+         gap: 15px;
+     }
+ }
+
+ @media screen and (max-width:678px) {
+     .footer__nav {
+         flex-direction: column;
+         gap: 50px;
+     }
+
+     .footer__nav-form {
+         max-width: none;
+     }
+
+     .footer__nav-lists {
+         gap: 10px;
+         width: 100%;
+     }
+
+     .footer__list {
+         flex-basis: 50%;
+     }
+ }
+
+ @media screen and (max-width:576px) {
+     .banner {
+         height: 400px;
+     }
+ }
+
+ @media screen and (max-width:480px) {
+     .header {
+         padding: 25px 0;
+     }
+
+     .header__nav {
+         flex-direction: column;
+         gap: 20px;
+     }
+ }
+
+ @media screen and (max-width:420px) {
+     .header__nav-list {
+         gap: 15px;
+     }
+
+     .header__nav-list_item-link {
+         font-size: 14px;
+     }
+
+     .banner {
+         height: 360px;
+     }
+ }
+
+ @media screen and (max-width:360px) {
+     .footer__nav-lists {
+         flex-direction: column;
+         gap: 40px;
+     }
+
+     .footer__list {
+         flex-basis: auto;
+     }
+ }
+
+ @media screen and (max-width:350px) {
+     .header__nav-list_item-link {
+         font-size: 12px;
+     }
+ }
