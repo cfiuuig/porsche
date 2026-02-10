@@ -34,17 +34,22 @@ body {
     align-items: center;
 }
 
+.header__nav-logo img {
+    height: clamp(1.625rem, 0.357rem + 6.34vw, 4.875rem);
+}
+
 .header__nav-list {
     display: flex;
     align-items: center;
     gap: 80px;
 }
 
-.header__nav-list_item-link {
+.header__nav-list_item-link,
+.footer__nav-list_title {
     color: #F0F0F0;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: clamp(0.5rem, 0.305rem + 0.98vw, 1rem);
 }
 
 /* header-end */
@@ -52,7 +57,8 @@ body {
 /* banner-start */
 .banner {
     background: url(../img/bg.png) no-repeat center bottom / cover;
-    height: 748px;
+    /* height: 748px; */
+    padding: clamp(1.625rem, -3.058rem + 23.41vw, 13.625rem);
 }
 
 .banner__wrap {
@@ -66,26 +72,26 @@ body {
 .banner__title {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: clamp(3.125rem, 0.93rem + 10.98vw, 8.75rem);
+    font-size: clamp(1.25rem, -1.677rem + 14.63vw, 8.75rem);
     color: #B31D1E;
 }
 
-.banner__link {
+.banner__btn {
     display: inline-block;
-    padding: 18px;
-    max-width: 265px;
+    padding: clamp(0.125rem, -0.265rem + 1.95vw, 1.125rem) 0;
+    max-width: clamp(3.125rem, -2.119rem + 26.22vw, 16.563rem);
     width: 100%;
-    text-align: center;
     background: linear-gradient(93.34deg, #FFA600 0%, #E41818 100%);
-    border-radius: 4px;
+    border-radius: clamp(0.125rem, 0.076rem + 0.24vw, 0.25rem);
     font-family: "Montserrat";
     font-weight: 800;
-    font-size: 24px;
+    font-size: clamp(0.375rem, -0.064rem + 2.2vw, 1.5rem);
     color: #141414;
     transition: 0.3s;
+    border: none;
 }
 
-.banner__link:hover {
+.banner__btn:hover {
     color: #F0F0F0;
     background: linear-gradient(93.34deg, #E41818 0%, #FFA600 100%);
 }
@@ -94,12 +100,13 @@ body {
 
 /* car-start */
 .car {
-    margin: 114px 0 164px;
+    /* margin: 114px 0 164px; */
+    margin: clamp(1.25rem, -1.043rem + 11.46vw, 7.125rem) 0 clamp(0.5rem, -3.305rem + 19.02vw, 10.25rem);
 }
 
 .car__wrap {
     display: flex;
-    gap: 30px;
+    gap: clamp(0.75rem, 0.311rem + 2.2vw, 1.875rem);
     justify-content: center;
     align-items: flex-start;
 }
@@ -107,57 +114,61 @@ body {
 .car__left {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: clamp(0.75rem, 0.311rem + 2.2vw, 1.875rem);
     max-width: 540px;
     width: 100%;
-}
-
-.car__left-title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: clamp(1.563rem, 1.197rem + 1.83vw, 2.5rem);
-    color: #EB3A13;
 }
 
 .car__left-desk {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 20px;
-    word-break: break-all
+    font-size: clamp(0.5rem, 0.207rem + 1.46vw, 1.25rem);
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .car__right {
     max-width: 540px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* 474 */
 .car__right img {
-    width: 100%;
+    width: clamp(7rem, -5.878rem + 64.39vw, 40rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallerey {
-    margin-bottom: 180px;
+    margin-bottom: clamp(0.75rem, -3.348rem + 20.49vw, 11.25rem);
 }
 
-.gallerey__title {
+.gallerey__title,
+.car__left-title,
+.about__title {
     font-weight: 700;
-    font-size: 40px;
+    font-size: clamp(0.75rem, 0.067rem + 3.41vw, 2.5rem);
+    font-family: "Montserrat", sans-serif;
     color: #EB3A13;
-    margin-bottom: 30px;
 }
+
+
 
 .gallerey__wrap {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-}
-
-.gallerey__img {
-    flex: 0 0 calc(50% -15px);
+    gap: clamp(0.375rem, -0.21rem + 2.93vw, 1.875rem);
+    margin-top: clamp(0.625rem, 0.137rem + 2.44vw, 1.875rem);
 }
 
 .gallerey__img img {
-    width: 100%;
+    flex: 0 0 calc(50% -15px);
 }
 
 .gallerey__img img {
@@ -168,27 +179,20 @@ body {
 
 /* about-start */
 .about {
-    margin-bottom: 120px;
+    margin-bottom: clamp(0.75rem, -1.884rem + 13.17vw, 7.5rem);
 }
 
 .about__wrap {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-bottom: 152px;
-}
-
-.about__title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    color: #EB3A13;
+    gap: clamp(0.5rem, -0.037rem + 2.68vw, 1.875rem);
+    margin-bottom: clamp(1.125rem, -2.095rem + 16.1vw, 9.375rem);
 }
 
 .about__desk {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: clamp(0.5rem, 0.207rem + 1.46vw, 1.25rem);
     color: #F0F0F0;
     word-break: break-all;
     display: -webkit-box;
@@ -204,9 +208,8 @@ body {
 /* about-end */
 /* footer-start */
 .footer {
-    padding: 38px 0 62px;
+    padding: clamp(0.75rem, 0.116rem + 3.17vw, 2.375rem) 0 clamp(0.75rem, 0.116rem + 3.17vw, 2.375rem);
     background: #1F1F1F;
-
 }
 
 .footer__nav {
@@ -215,7 +218,7 @@ body {
 }
 
 .footer__nav-form {
-    max-width: 350px;
+    max-width: clamp(7.375rem, 1.716rem + 28.29vw, 21.875rem);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -226,11 +229,11 @@ body {
     border: none;
     outline: none;
     background: none;
-    padding-bottom: 8px;
+    padding-bottom: clamp(0.063rem, -0.108rem + 0.85vw, 0.5rem);
     border-bottom: 1px solid #F0F0F0;
     font-family: "Fustat", sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: clamp(0.375rem, 0.18rem + 0.98vw, 0.875rem);
     color: #F0F0F0;
 }
 
@@ -240,9 +243,11 @@ body {
     outline: none;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 14px;
-    padding: 10px;
-    margin-top: 22px;
+    font-size: clamp(0.5rem, 0.354rem + 0.73vw, 0.875rem);
+    width: clamp(6.75rem, 0.799rem + 29.76vw, 22rem);
+    margin: auto;
+    padding: clamp(0.25rem, 0.104rem + 0.73vw, 0.625rem);
+    margin-top: clamp(0.375rem, -0.015rem + 1.95vw, 1.375rem);
     border-radius: 4px;
     background: linear-gradient(93.34deg, #FFA600 0%, #E41818 100%);
     transition: 0.3s;
@@ -256,28 +261,28 @@ body {
 
 .footer__nav-lists {
     display: flex;
-    gap: 52px;
+    gap: clamp(1.25rem, 0.568rem + 3.41vw, 3.125rem);
     align-items: flex-start;
 }
 
 .footer__nav-list {
     display: flex;
-    gap: 30px;
+    gap: clamp(0rem, -0.732rem + 3.66vw, 1.875rem);
     flex-direction: column;
-}
-
-.footer__nav-list_title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    color: #F0F0F0;
 }
 
 .footer__nav-list_item-link {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: clamp(0.25rem, 0.006rem + 1.22vw, 0.875rem);
     color: #F0F0F0;
 }
 
 /* footer-start */
+
+
+.burger,
+#burger-toggle,
+.menu-mobile {
+    display: none;
+}

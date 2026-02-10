@@ -28,6 +28,23 @@
                         <a href="#" class="header__nav-list_item-link">ABOUT US</a>
                     </li>
                 </ul>
+
+                <!-- бургер (мобилка) -->
+                <input type="checkbox" id="burger-toggle">
+
+                <label for="burger-toggle" class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+
+                <!-- мобильное меню -->
+                <nav class="menu-mobile">
+                    <a href="#" class="header__nav-list_item-link">HOME</a>
+                    <a href="#" class="header__nav-list_item-link">CATEGORY</a>
+                    <a href="#" class="header__nav-list_item-link">ABOUT</a>
+                </nav>
             </nav>
         </div>
     </header>
@@ -37,7 +54,7 @@
     <section class="banner">
         <div class="container banner__wrap">
             <h1 class="banner__title">PORSCHE</h1>
-            <a href="#" class="banner__link">MORE</a>
+            <button class="banner__btn">MORE</button>
         </div>
     </section>
     <!-- banner-end -->
@@ -47,10 +64,10 @@
         <div class="container car__wrap">
             <div class="car__left">
                 <h2 class="car__left-title">PORSCHE 911 GT3 R5</h2>
-                <p class="car__left-desc">The Porsche 911 GT3 R (or 911 GT3 R5) is a specialized race car designed for
+                <p class="car__left-desk">The Porsche 911 GT3 R (or 911 GT3 R5) is a specialized race car designed for
                     participation in various racing series, including GT championships and other international
                     competitions.</p>
-                <p class="car__left-desc">It represents an enhanced version of the legendary Porsche 911, with a
+                <p class="car__left-desk">It represents an enhanced version of the legendary Porsche 911, with a
                     reinforced structure, improved aerodynamic characteristics, and a powerful engine to ensure maximum
                     performance on the track.</p>
 
@@ -65,9 +82,11 @@
         <div class="container">
             <h2 class="gallerey__title">GALLERY</h2>
             <div class="gallerey__wrap">
+                
                 <div class="gallerey__img"><img src="img/gallery1.png" alt=""></div>
                 <div class="gallerey__img"><img src="img/gallerey2.png" alt=""></div>
-                <div class="gallerey__img"><img src="img/gallerey3.png" alt=""></div>
+                <div class="gallerey__img "><img src="img/gallerey3.png" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -121,10 +140,10 @@
 
         </textarea>
 
-                    <button class="footer__nav-form_btn" type="submit">SUBMIT</button>
-                </form>
+                    <button class="footer__nav-form_btn" type="submit" >SUBMIT</button>
+                </form> 
 
-                <div class="footer__nav-lists">
+                <div class="footer__nav-lists" >
                     <ul class="footer__nav-list">
                         <h3 class="footer__nav-list_title">CONTACT</h3>
                         <li class="footer__nav-list_item"><a href="tel:+998988889898"
@@ -135,7 +154,7 @@
                                 class="footer__nav-list_item-link">zipcode 32323232</a></li>
                     </ul>
 
-                    <ul class="footer__nav-list">
+                    <ul class="footer__nav-list" id="">
                         <h3 class="footer__nav-list_title">SOCIAL</h3>
                         <li class="footer__nav-list_item"><a href="#" class="footer__nav-list_item-link">Instagram</a>
                         </li>
@@ -148,8 +167,6 @@
             </nav>
         </div>
     </footer>
-
-
     <!-- footer-end -->
 </body>
 
